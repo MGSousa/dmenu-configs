@@ -1,4 +1,4 @@
-#+TITLE: dmenu-custom
+#+TITLE: dmenu-configs
 
 * What is dmenu?
 dmenu is a dynamic menu for X, originally designed for dwm. It manages large numbers of user-defined menu items efficiently.  It is a very powerful tool that allows you to pipe information into it.  This makes dmenu a perfect utility to incorporate into your scripting.
@@ -71,19 +71,18 @@ Mouse actions supported:
 + [-Y yoffset]
 + [-W width]
 
-An example: dmenu_run -c -bw 2 -l 20 -g 4 -p 'Run: '
+An example: ls | dmenu -c -bw 2 -l 20 -g 2
 
-This launches dmenu_run with -c (centered), -bw (border width), -l (number of vertical lines) and -g (number of grid columns).
+This launches default dmenu with -c (centered), -bw (border width), -l (number of vertical lines) and -g (number of grid columns).
 
-* Installing dmenu-custom on Arch Linux
+* Installing on Arch Linux
 All you need to do is to download the PKGBUILD from this repository.  Then run the following command:
+#+begin_src sh
+makepkg -cf= && sudo pacman -U *.pkg.tar.zst=
+#+end_src
 
-=makepkg -cf=
-
-This will create a file that ends in .pkg.tar.zst.  Then run:
-
-=sudo pacman -U *.pkg.tar.zst=
-
-* Installing dmenu-custom on other Linux distro's
- - git clone https://github.com/MGSousa/dmenu-zos && cd dmenu-zos
- - sudo make clean install 
+* Installing on other Linux distro's
+#+begin_src sh
+git clone https://github.com/MGSousa/dmenu-configs && cd dmenu-configs
+sudo make clean install 
+#+end_src
