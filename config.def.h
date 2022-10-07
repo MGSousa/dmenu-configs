@@ -59,8 +59,8 @@ static char *fonts[] =
 static const char *fonts[] = 
 #endif // XRESOURCES_PATCH
 {
-	"Hack:pixelsize=11:antialias=true:autohint=true",
-	"JoyPixels:pixelsize=8:antialias=true:autohint=true"
+	"Ubuntu Mono:pixelsize=24:antialias=true:autohint=true",
+	"JoyPixels:pixelsize=20:antialias=true:autohint=true"
 };
 #endif // PANGO_PATCH
 
