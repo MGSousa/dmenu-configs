@@ -1,7 +1,7 @@
 #+TITLE: dmenu-configs
 
 * What is dmenu?
-dmenu is a dynamic menu for X, originally designed for dwm. It manages large numbers of user-defined menu items efficiently.  It is a very powerful tool that allows you to pipe information into it.  This makes dmenu a perfect utility to incorporate into your scripting.
+dmenu is a dynamic menu for X, originally designed for dwm, now working for major of Window/Tiling Managers out there. It manages large numbers of user-defined menu items efficiently.  It is a very powerful tool that allows you to pipe information into it.  This makes dmenu a perfect utility to incorporate into your scripting.
 
 * What is dmenu-flexipatch?
 Similar to [[https://github.com/bakkeby/dwm-flexipatch][dwm-flexipatch]], the [[https://github.com/bakkeby/dmenu-flexipatch][dmenu-flexipatch]] project has a unique take on patching. It uses preprocessor directives to decide whether or not to include a patch during build time.  Patching with dmenu-flexipatch is much easier than the traditional patching methods, especially when using many patches (which I do!).
@@ -52,7 +52,8 @@ Mouse actions supported:
 * Available flags
 + [-bw borderwidth]
 + [-c] for centering
-+ [-P password input]
++ [-P for hidden input]
++ [-Pcb for hidden clipboard injection]
 + [-fn font]
 + [-g columns]
 + [-l lines]
